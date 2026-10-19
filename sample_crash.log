@@ -1,0 +1,16 @@
+2026-10-19 14:15:20.104 [INFO] [order_dispatcher] Processing batch order_batch_7721
+2026-10-19 14:15:21.018 [INFO] [order_dispatcher] Authenticating API worker client_id=worker_prod_4 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFkbWluIFVzZXIifQ.fl19p-3bL9H-W8u71P4q8
+2026-10-19 14:15:22.450 [DEBUG] [db_connector] Connecting to cluster: postgres://app_user:SuperSecretP@ssword2026@cluster-master.internal:5432/orders_prod
+2026-10-19 14:15:23.110 [INFO] [cloud_backup] Initializing AWS S3 sync with access key AKIAIOSFODNN7EXAMPLE and secret_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+2026-10-19 14:15:24.890 [WARNING] [db_connector] Connection pool response delayed. Active connections: 99/100
+2026-10-19 14:15:25.910 [CRITICAL] [order_dispatcher] Unhandled Deadlock Exception in Worker Thread #14
+Traceback (most recent call last):
+  File "/app/workers/order_dispatcher.py", line 88, in process_batch
+    inventory_result = await inventory_service.reserve_items(batch.items)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/inventory.py", line 144, in reserve_items
+    async with db.transaction(isolation_level="SERIALIZABLE"):
+  File "/usr/local/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/engine.py", line 580, in __aenter__
+    raise DBDeadlockDetected("Deadlock detected between Process PID 4821 and PID 4832 waiting for exclusive row lock on table 'inventory_stocks'")
+sqlalchemy.exc.DBDeadlockDetected: Deadlock detected between Process PID 4821 and PID 4832 waiting for exclusive row lock on table 'inventory_stocks'
+2026-10-19 14:15:26.012 [ERROR] [order_dispatcher] Transaction rollback failed: Socket reset by peer

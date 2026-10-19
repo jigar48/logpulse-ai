@@ -1,0 +1,21 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+
+# Output reports & logs
+*.log
+!sample_crash.log
+incident_report.md
+demo-postmortem.md
+
+# OS files
+.DS_Store
+Thumbs.db
