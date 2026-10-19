@@ -4,7 +4,7 @@
 [![Python: 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![AI Engine: Google Gemini 2.5](https://img.shields.io/badge/AI%20Engine-Gemini%202.5%20Flash-orange.svg)](https://ai.google.dev/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jigar48/logpulse-ai)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-ffd700.svg)](https://buymeacoffee.com/YOUR_LINK)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-ffd700.svg)](https://buymeacoffee.com/buildwithjigar)
 
 > **Turn unreadable stack traces, production crash loops, and CI/CD failures into root causes, unified git diffs, and executive incident post-mortems in seconds.**
 
@@ -136,7 +136,7 @@ Run with `--scrub-strict` for aggressive masking.
 
 LogPulse AI is completely free and open-source under the MIT license. If this tool saved you hours of debugging outages or downtime:
 
-- ☕ **[Buy Me a Coffee](https://buymeacoffee.com/YOUR_LINK)** — Fuel further open-source development!
+- ☕ **[Buy Me a Coffee](https://buymeacoffee.com/buildwithjigar)** — Fuel further open-source development!
 - ⭐ **Star this repository** on GitHub to help fellow engineers find it.
 
 ---
@@ -151,9 +151,10 @@ I specialize in:
 - Low-Latency Backend Systems & Cloud Infrastructure (Python, Go, GCP, AWS)
 
 📫 **Reach out for consulting & contract engagements:**
-- **LinkedIn:** [linkedin.com/in/YOUR_LINK](https://linkedin.com/in/YOUR_LINK)
-- **Portfolio / Inquiries:** [YOUR_WEBSITE_OR_EMAIL](mailto:your_email@example.com)
+- **LinkedIn:** [Jigar Prajapati](https://www.linkedin.com/in/buildaiwith-jigar-prajapati/)
+- **Portfolio:** [jigar48.github.io/automatewithjigar](https://jigar48.github.io/automatewithjigar/)
+- **GitHub:** [@jigar48](https://github.com/jigar48)
 
 ---
 
-*Built with precision for developers, SREs, and DevOps engineers worldwide.*
+*Built with precision by [Jigar Prajapati](https://www.linkedin.com/in/buildaiwith-jigar-prajapati/) for developers, SREs, and DevOps engineers worldwide.*
